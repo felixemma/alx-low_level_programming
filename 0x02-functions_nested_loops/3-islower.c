@@ -1,23 +1,20 @@
 #include "main.h"
 /**
- * _slower - detect lowercase and uppercase
- *
- * Description: use _putchar to print
- *@c: collect alphabets
- * Return: (1) if c is lower otherwise (0)
- *
+ * _islower - entry point
+ * Description: function that checks for lowercase character
+ * @c:character to check if it islowercase
+ * Return: 0-if lowercase, 1-if not
  */
+
 int _islower(int c)
 {
-	char i;
-	int lower = 0;
-
-	for (i = 'a'; i <= 'z' i++)
+	if (c >= 'a' && c <= 'z')
 	{
-		if (i == c)
-		{
-		lower = 1;
-		}
+	return (1);
 	}
-	return (lower);
+	else
+	{
+	return (0);
+	}
 }
+
